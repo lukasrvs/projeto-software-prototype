@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>TMS - Transportation Management System</title>
+  <title>Mercadoria - Listagem</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -62,10 +62,10 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="cliente-list.html">Clientes</a>
             <a class="collapse-item" href="empresa-list.html">Empresa</a>
-            <a class="collapse-item" href="mercadoria-list.html">Mercadorias</a>
+            <a class="collapse-item active" href="mercadoria-list.html">Mercadorias</a>
             <a class="collapse-item" href="motorista-list.html">Motoristas</a>
-            <a class="collapse-item" href="veiculo-list.html">Veículos</a>
             <a class="collapse-item" href="usuario-list.html">Usuarios</a>
+            <a class="collapse-item" href="veiculo-list.html">Veículos</a>
           </div>
         </div>
       </li>
@@ -310,24 +310,71 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+
           <!-- Page Heading -->
-          <div class="p-3 bg-gray-200">
-            <div class="card-body">
-                <h6 class="m-0 font-weight-bold text-primary">
-                  Seja bem vindo ao SGT
-                </h6>
-              </div>
-          </div>
+          <h1 class="h3 mb-2 text-gray-800">Mercadorias</h1>
           <p class="mb-4"></p>
 
-          <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+            <a href="mercadoria-create.html" 
+              class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+              <i class="fas fa-plus fa-sm text-white-50"></i> 
+                Nova <span class="font-weight-bold">Mercadoria</span>
+            </a>
           </div>
 
-          <!-- Content Row -->
-          <div class="row">
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Listagem</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                      <th>Start date</th>
+                      <th>Salary</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div>
+                          <a href="mercadoria-edit.html" 
+                            class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                            <i class="fas fa-cog fa-sm text-white-50"></i> 
+                              Editar
+                          </a>
+                        </div>
+                      </td>
+                      <td>Tiger Nixon</td>
+                      <td>System Architect</td>
+                      <td>Edinburgh</td>
+                      <td>61</td>
+                      <td>2011/04/25</td>
+                      <td>$320,800</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -340,7 +387,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2021</span>
+            <span>Copyright &copy; Your Website 2020</span>
           </div>
         </div>
       </footer>
@@ -386,13 +433,6 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 
