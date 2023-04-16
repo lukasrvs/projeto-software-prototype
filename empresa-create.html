@@ -89,8 +89,8 @@
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#relatorios"
-          aria-expanded="true" aria-controls="relatorios">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#relatorios" aria-expanded="true"
+          aria-controls="relatorios">
           <i class="fas fa-fw fa-table"></i>
           <span>Relatorios</span>
         </a>
@@ -316,13 +316,96 @@
           <p class="mb-4"></p>
 
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <a href="empresa-list.html" 
-              class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-              <i class="fas fa-list fa-sm text-white-50"></i> 
-                Listagem <span class="font-weight-bold">Empresas</span>
+            <a href="empresa-list.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+              <i class="fas fa-list fa-sm text-white-50"></i>
+              Listagem <span class="font-weight-bold">Empresas</span>
             </a>
           </div>
-
+          <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+              <!-- Nested Row within Card Body -->
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="p-5">
+                    <form class="user">
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput1">
+                              Name
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput1" type="email"
+                              placeholder="Name">
+                          </div>
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput2">
+                              Position
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput2" type="password"
+                              placeholder="Position name">
+                          </div>
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput2">
+                              Office
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput2" type="password"
+                              placeholder="Office name">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput1">
+                              Age
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput1" type="email"
+                              placeholder="Age">
+                          </div>
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput2">
+                              Start date
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput2" type="date"
+                              placeholder="Start date">
+                          </div>
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput2">
+                              Salary
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput2" type="number"
+                              placeholder="Salary">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <label for="exampleFormControlSelect1">
+                              Example select
+                            </label>
+                            <select class="form-control form-control-solid" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                      <div class=" row d-flex justify-content-center">
+                        <div class="col-sm-2">
+                          <a href="empresa-edit.html" 
+                            class="btn btn-primary btn-user btn-block" 
+                            onclick="alert('Alterado concluída com sucesso !')">
+                            Salvar
+                          </a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
 
