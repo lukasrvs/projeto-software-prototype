@@ -45,14 +45,14 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Página Inicial</span></a>
       </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
           aria-controls="collapseTwo">
           <i class="fas fa-fw fa-plus-circle"></i>
@@ -79,10 +79,9 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
+            <a class="collapse-item" href="ordem-list.html">Ordem de Carregamento</a>
+            <a class="collapse-item" href="pedido-list.html">Pedido</a>
+            <a class="collapse-item" href="rotas-list.html">Rotas</a>
           </div>
         </div>
       </li>
@@ -96,10 +95,9 @@
         </a>
         <div id="relatorios" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
+            <a class="collapse-item" href="carregamento-relatorio-list.html">Carregamento</a>
+            <a class="collapse-item" href="desempenho-relatorio-list.html">Desempenho</a>
+            <a class="collapse-item" href="financeiro-relatorio-list.html">Financeiro</a>
           </div>
         </div>
       </li>
@@ -310,19 +308,101 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
           <!-- Page Heading -->
           <h1 class="h3 mb-2 text-gray-800">Mercadoria - Inserção</h1>
           <p class="mb-4"></p>
 
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <a href="mercadoria-list.html" 
-              class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-              <i class="fas fa-list fa-sm text-white-50"></i> 
-                Listagem <span class="font-weight-bold">Mercadorias</span>
+            <a href="mercadoria-list.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+              <i class="fas fa-list fa-sm text-white-50"></i>
+              Listagem <span class="font-weight-bold">Mercadorias</span>
             </a>
           </div>
-
+          <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+              <!-- Nested Row within Card Body -->
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="p-5">
+                    <form class="user">
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput1">
+                              Name
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput1" type="email"
+                              placeholder="Name">
+                          </div>
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput2">
+                              Position
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput2" type="password"
+                              placeholder="Position name">
+                          </div>
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput2">
+                              Office
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput2" type="password"
+                              placeholder="Office name">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput1">
+                              Age
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput1" type="email"
+                              placeholder="Age">
+                          </div>
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput2">
+                              Start date
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput2" type="date"
+                              placeholder="Start date">
+                          </div>
+                          <div class="col-sm-4">
+                            <label for="exampleFormControlInput2">
+                              Salary
+                            </label>
+                            <input class="form-control form-control-solid" id="exampleFormControlInput2" type="number"
+                              placeholder="Salary">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <label for="exampleFormControlSelect1">
+                              Example select
+                            </label>
+                            <select class="form-control form-control-solid" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                      <div class=" row d-flex justify-content-center">
+                        <div class="col-sm-2">
+                          <a href="mercadoria-edit.html" 
+                            class="btn btn-primary btn-user btn-block" 
+                            onclick="alert('Alteração concluída com sucesso !')">
+                            Salvar
+                          </a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
 
